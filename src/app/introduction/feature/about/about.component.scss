@@ -1,0 +1,15 @@
+:host{
+    font-family: Prata-regular;
+}
+
+.content {
+    height: 70vh;
+}
+
+.action {
+    width: max-content;
+    &:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
