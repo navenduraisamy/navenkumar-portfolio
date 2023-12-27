@@ -1,15 +1,33 @@
 <div class="row py-4">
   <div class="col-md-3">
     <div class="list-group">
-      <a routerLink="#" class="list-group-item list-group-item-action">
+      <a
+        routerLink="personal-projects"
+        class="list-group-item list-group-item-action"
+        [class.active]="activeIndex == 0"
+        (click)="setActiveIndex(0)"
+      >
         Personal Projects
       </a>
-      <a routerLink="#" class="list-group-item list-group-item-action">Leetcode</a>
-      <a routerLink="#" class="list-group-item list-group-item-action">HackerRank</a>
+      <a
+        routerLink="leetcode"
+        class="list-group-item list-group-item-action"
+        [class.active]="activeIndex == 1"
+        (click)="setActiveIndex(1)"
+      >
+        Leetcode
+      </a>
+      <a
+        routerLink="hacker-rank"
+        class="list-group-item list-group-item-action"
+        [class.active]="activeIndex == 2"
+        (click)="setActiveIndex(2)"
+      >
+        HackerRank
+      </a>
     </div>
   </div>
-  <div class="col-md-9">
-    <!-- <router-outlet></router-outlet> -->
+  <div class="col-md-8 offset-md-1">
+    <router-outlet></router-outlet>
   </div>
 </div>
-

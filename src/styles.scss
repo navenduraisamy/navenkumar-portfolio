@@ -10,3 +10,9 @@
 body {
     font-family: Prata-regular;
 }
+
+.action {
+    &:hover {
+        cursor: pointer;
+    }
+}

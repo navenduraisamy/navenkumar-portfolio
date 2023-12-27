@@ -7,12 +7,7 @@
 }
 
 .action {
-    position: relative;
     &:focus {
         outline: none;
-    }
-
-    &:hover{
-        cursor: pointer;
     }
 }
