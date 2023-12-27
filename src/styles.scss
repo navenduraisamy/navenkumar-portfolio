@@ -1,9 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'bootstrap/scss/bootstrap';
 
 @font-face {
     font-family: Prata-regular;
-    src: url("./assets/Prata-Regular.ttf");
+    src: url("./assets/fonts/Prata-Regular.ttf");
 }
+
 
 body {
     font-family: Prata-regular;

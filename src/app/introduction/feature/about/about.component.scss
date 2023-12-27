@@ -7,9 +7,12 @@
 }
 
 .action {
-    width: max-content;
+    position: relative;
+    &:focus {
+        outline: none;
+    }
+
     &:hover{
         cursor: pointer;
-        text-decoration: underline;
     }
 }
