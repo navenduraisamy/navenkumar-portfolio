@@ -2,12 +2,11 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, map } from 'rxjs';
 import { Repository } from '../../types/github';
-import { environment } from 'src/environments/environment';
 
 @Injectable()
 export class GithubService {
 
-  private _domain = environment.github;
+  private _domain = "github/";
 
   constructor(private http: HttpClient) { }
 

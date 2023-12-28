@@ -1,10 +1,18 @@
 {
     "/leetcode": {
         "target":"https://leetcode.com",
-        "secure": false,
+        "secure": true,
         "changeOrigin": true,
         "pathRewrite": {
             "leetcode":""
+        }
+    }, 
+    "/github": {
+        "target": "https://api.github.com/",
+        "secure": true,
+        "changeOrigin": true,
+        "pathRewrite": {
+            "github":""
         }
     }
 }
