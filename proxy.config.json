@@ -1,0 +1,10 @@
+{
+    "/leetcode": {
+        "target":"https://leetcode.com",
+        "secure": false,
+        "changeOrigin": true,
+        "pathRewrite": {
+            "leetcode":""
+        }
+    }
+}

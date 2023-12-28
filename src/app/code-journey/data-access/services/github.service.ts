@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, map, withLatestFrom } from 'rxjs';
-import { Repository } from '../../types/repository';
+import { Observable, map } from 'rxjs';
+import { Repository } from '../../types/github';
 import { environment } from 'src/environments/environment';
 
 @Injectable()

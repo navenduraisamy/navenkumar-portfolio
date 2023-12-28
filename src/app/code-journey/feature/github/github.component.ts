@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GithubService } from '../../data-access/services/github.service';
 import { Observable } from 'rxjs';
-import { Repository } from '../../types/repository';
+import { Repository } from '../../types/github';
 import { HttpClientModule } from '@angular/common/http';
 
 @Component({
