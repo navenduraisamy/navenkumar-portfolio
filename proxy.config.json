@@ -14,5 +14,14 @@
         "pathRewrite": {
             "github":""
         }
+    },
+    "/hackerrank": {
+        "target": "https://www.hackerrank.com/",
+        "secure": true,
+        "changeOrigin": true,
+        "pathRewrite": {
+            "hackerrank":""
+        }
+
     }
 }
