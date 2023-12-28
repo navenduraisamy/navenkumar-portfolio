@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, map } from 'rxjs';
-import { Repository } from '../../types/github';
+import { GithubUser, Repository } from '../../types/github';
 
 @Injectable()
 export class GithubService {
@@ -23,5 +23,16 @@ export class GithubService {
       })  as Repository )),
       map(repos => repos.filter((repo) => repo.topics.includes("portfolio-item")))
     );
+  }
+
+  getUserProfile(): Observable<GithubUser> {
+    return this.http.get<GithubUser>(`${this._domain}users/navenduraisamy`).pipe(
+      map(user => ({
+        name: user.name,
+        login: user.login,
+        avatar_url: user.avatar_url,
+        html_url: user.html_url
+      }) as GithubUser)
+    )
   }
 }

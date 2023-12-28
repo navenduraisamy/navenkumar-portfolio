@@ -1,0 +1,14 @@
+@import "bootstrap/scss/bootstrap";
+
+.profile-pic {
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid $gray-200;
+}
+
+.text-container {
+    margin-left: 16px;
+    h5{
+        margin-bottom: 0;
+    }
+}
