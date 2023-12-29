@@ -8,7 +8,7 @@ export class HackerRankService {
   constructor(private http: HttpClient) {}
 
   getUserCertificates(username: string): Observable<HackerRankCertificate[]> {
-    return this.http.get<{ data: HackerRankCertificate[]}>("/assets/data-source/hackerrank.json")
+    return this.http.get<{ data: HackerRankCertificate[]}>("assets/data-source/hackerrank.json")
       .pipe(
         map(response => response.data),
         map((items: HackerRankCertificate[]) =>
@@ -18,7 +18,7 @@ export class HackerRankService {
   }
 
   getUserData(): Observable<HackerRankUser> {
-    return this.http.get<{ model: HackerRankUser }>("/assets/data-source/hackerrank-user.json").pipe(
+    return this.http.get<{ model: HackerRankUser }>("assets/data-source/hackerrank-user.json").pipe(
       map((data) => data.model),
       map(user => ({
         name: user.name,
