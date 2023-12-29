@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, map, tap } from 'rxjs';
-import { HackerRankCertificate } from '../../types/hacker-rank';
+import { HackerRankCertificate, HackerRankUser } from '../../types/hacker-rank';
 
 @Injectable()
 export class HackerRankService {
@@ -14,7 +14,18 @@ export class HackerRankService {
         map((items: HackerRankCertificate[]) =>
           items.filter((item) => item.attributes.status === 'test_passed')
         ),
-        tap(console.log)
       );
+  }
+
+  getUserData(): Observable<HackerRankUser> {
+    return this.http.get<{ model: HackerRankUser }>("/assets/data-source/hackerrank-user.json").pipe(
+      map((data) => data.model),
+      map(user => ({
+        name: user.name,
+        username: user.username,
+        avatar: user.avatar,
+        id: user.id
+      }) as HackerRankUser)
+    )
   }
 }

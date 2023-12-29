@@ -1,1 +1,5 @@
-{{ leetcodeUser$ | async | json }}
+<ng-container *ngIf="(leetcodeUser$ | async) as user">
+    <app-user-profile [displayName]="user.profile.realName" [avatarUrl]="user.profile.userAvatar">
+        <a href="https://leetcode.com/{{ user.username }}" class="text-muted">{{ user.username }}</a>
+    </app-user-profile>
+</ng-container>
