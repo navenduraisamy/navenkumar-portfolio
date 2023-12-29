@@ -1,0 +1,23 @@
+"use strict";(self.webpackChunknavenkumar_portfolio=self.webpackChunknavenkumar_portfolio||[]).push([[957],{6957:(C,c,s)=>{s.r(c),s.d(c,{LeetcodeComponent:()=>Z});var l=s(6814),d=s(1685);const m=d.Ps`
+  query userInfo($username: String!) {
+    leetcodeUser: matchedUser(username: $username) {
+      username
+      profile {
+        realName
+        userAvatar
+      }
+      submitStatsGlobal {
+        acSubmissionNum {
+          difficulty
+          count
+        }
+      }
+      badges {
+        id
+        displayName
+        icon
+        category
+      }
+    }
+  }
+`;var r=s(7398),e=s(9468),g=s(9862);let p=(()=>{class n{constructor(t,i){this.apollo=t,this.http=i,this.client="leetcode"}getUserInfoLive(t){return this.apollo.use(this.client).query({query:m,variables:{username:t}}).pipe((0,r.U)(i=>i.data))}getUserInfo(t){return this.http.get("assets/data-source/leetcode.json").pipe((0,r.U)(i=>i.data.leetcodeUser))}getSkills(){return this.http.get("assets/data-source/leetcode-skill.json").pipe((0,r.U)(t=>t.tagProblemCounts),(0,r.U)(t=>({...t,advanced:t.advanced.sort((i,a)=>a.problemsSolved-i.problemsSolved),intermediate:t.intermediate.sort((i,a)=>a.problemsSolved-i.problemsSolved)})))}static#e=this.\u0275fac=function(i){return new(i||n)(e.LFG(d._M),e.LFG(g.eN))};static#t=this.\u0275prov=e.Yz7({token:n,factory:n.\u0275fac})}return n})();var u=s(7123);let f=(()=>{class n{static#e=this.\u0275fac=function(i){return new(i||n)};static#t=this.\u0275cmp=e.Xpm({type:n,selectors:[["app-badge-item"]],inputs:{imageUrl:"imageUrl",description:"description"},standalone:!0,features:[e.jDz],decls:1,vars:2,consts:[["data-bs-toggle","tooltip","data-bs-placement","top",1,"badge-item",3,"src","title"]],template:function(i,a){1&i&&e._UZ(0,"img",0),2&i&&e.Q6J("src",a.imageUrl,e.LSH)("title",a.description)},dependencies:[l.ez],styles:[".badge-item[_ngcontent-%COMP%]{max-width:100px}"]})}return n})();function v(n,o){if(1&n&&e._UZ(0,"app-badge-item",8),2&n){const t=o.$implicit;e.Q6J("imageUrl",t.icon)("description",t.displayName)}}function h(n,o){if(1&n&&(e.TgZ(0,"div",12)(1,"span",13),e._uU(2),e.qZA(),e.TgZ(3,"small"),e._uU(4),e.qZA()()),2&n){const t=o.$implicit;e.xp6(2),e.hij(" ",t.tagName," "),e.xp6(2),e.hij("x ",t.problemsSolved,"")}}function _(n,o){if(1&n&&(e.TgZ(0,"div",5)(1,"p"),e._uU(2),e.ALo(3,"titlecase"),e.qZA(),e.TgZ(4,"div",10),e.YNc(5,h,5,2,"div",11),e.qZA()()),2&n){const t=o.$implicit;e.xp6(2),e.Oqu(e.lcZ(3,2,t.key)),e.xp6(3),e.Q6J("ngForOf",t.value)}}function U(n,o){if(1&n&&(e.TgZ(0,"div"),e.YNc(1,_,6,4,"div",9),e.ALo(2,"keyvalue"),e.qZA()),2&n){const t=o.ngIf;e.xp6(1),e.Q6J("ngForOf",e.lcZ(2,1,t))}}function y(n,o){if(1&n&&(e.ynx(0),e.TgZ(1,"app-user-profile",1)(2,"a",2),e._uU(3),e.qZA()(),e.TgZ(4,"section",3)(5,"h5",4),e._uU(6,"Badges"),e.qZA(),e.TgZ(7,"div",5)(8,"div",6),e.YNc(9,v,1,2,"app-badge-item",7),e.qZA()()(),e.TgZ(10,"section",3)(11,"h5",4),e._uU(12,"Skills"),e.qZA(),e.YNc(13,U,3,3,"div",0),e.ALo(14,"async"),e.qZA(),e.BQk()),2&n){const t=o.ngIf,i=e.oxw();e.xp6(1),e.Q6J("displayName",t.profile.realName)("avatarUrl",t.profile.userAvatar),e.xp6(1),e.MGl("href","https://leetcode.com/",t.username,"",e.LSH),e.xp6(1),e.hij(" ",t.username," "),e.xp6(6),e.Q6J("ngForOf",t.badges),e.xp6(4),e.Q6J("ngIf",e.lcZ(14,6,i.skill$))}}let Z=(()=>{class n{constructor(t){this.leetcodeService=t,this.username="navenduraisamy",this.leetcodeUser$=this.leetcodeService.getUserInfo(this.username),this.skill$=this.leetcodeService.getSkills()}static#e=this.\u0275fac=function(i){return new(i||n)(e.Y36(p))};static#t=this.\u0275cmp=e.Xpm({type:n,selectors:[["app-leetcode"]],standalone:!0,features:[e._Bn([p]),e.jDz],decls:2,vars:3,consts:[[4,"ngIf"],[3,"displayName","avatarUrl"],[1,"text-muted",3,"href"],[1,"mt-4","mt-md-5"],[1,"border-bottom","pb-1"],[1,"mt-3"],[1,"card-body"],[3,"imageUrl","description",4,"ngFor","ngForOf"],[3,"imageUrl","description"],["class","mt-3",4,"ngFor","ngForOf"],[1,"skills-container"],["class","skill-item",4,"ngFor","ngForOf"],[1,"skill-item"],[1,"badge","rounded-pill","bg-light","text-dark"]],template:function(i,a){1&i&&(e.YNc(0,y,15,8,"ng-container",0),e.ALo(1,"async")),2&i&&e.Q6J("ngIf",e.lcZ(1,1,a.leetcodeUser$))},dependencies:[l.ez,l.sg,l.O5,l.Ov,l.rS,l.Nd,u.t,f],styles:[".skills-container[_ngcontent-%COMP%]{display:flex;flex-wrap:wrap}.skills-container[_ngcontent-%COMP%]   .skill-item[_ngcontent-%COMP%]{margin:2px 10px}.skills-container[_ngcontent-%COMP%]   .skill-item[_ngcontent-%COMP%]   .text-dark[_ngcontent-%COMP%]{font-weight:100}.skills-container[_ngcontent-%COMP%]   .skill-item[_ngcontent-%COMP%]   small[_ngcontent-%COMP%]{margin-left:5px;color:#6c757d;font-size:12px}"]})}return n})()}}]);
