@@ -1,6 +1,6 @@
 <ng-container *ngIf="(hacker$ | async) as hacker">
     <app-user-profile [displayName]="hacker.name" [avatarUrl]="hacker.avatar">
-        <a href="http://hackerrank.com/{{hacker.username}}">{{hacker.username}}</a>
+        <a class="text-muted" href="http://hackerrank.com/{{hacker.username}}">{{hacker.username}}</a>
     </app-user-profile>
 </ng-container>
 

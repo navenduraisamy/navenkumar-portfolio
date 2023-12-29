@@ -15,3 +15,14 @@ export interface Badge {
   icon: string;
   category: string;
 }
+
+export interface TagProblemCounts {
+  advanced: Tag[];
+  intermediate: Tag[];
+}
+
+export interface Tag {
+  tagName: string;
+  tagSlug: string;
+  problemsSolved: number;
+}

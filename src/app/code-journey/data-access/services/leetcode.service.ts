@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Apollo } from 'apollo-angular';
 import { GET_LEETCODE_USER_INFO } from '../graphql/leetcode-queries';
-import { LeetcodeUser } from '../../types/leetcode';
+import { LeetcodeUser, TagProblemCounts } from '../../types/leetcode';
 import { Observable, map } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
@@ -23,6 +23,21 @@ export class LeetcodeService {
     return this.http.get<{data: { leetcodeUser: LeetcodeUser }}>("/assets/data-source/leetcode.json")
       .pipe(
         map((response) => response.data.leetcodeUser)
+      )
+  }
+
+  getSkills(): Observable<TagProblemCounts> {
+    return this.http.get<{ tagProblemCounts: TagProblemCounts }>("/assets/data-source/leetcode-skill.json")
+      .pipe(
+        map(response => response.tagProblemCounts),
+        map(response => {
+          return {
+            ...response,
+            "advanced": response.advanced.sort((tag1, tag2) => tag2.problemsSolved - tag1.problemsSolved),
+            "intermediate": response.intermediate.sort((tag1, tag2) => tag2.problemsSolved - tag1.problemsSolved)
+          }
+          
+        })
       )
   }
 } 

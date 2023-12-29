@@ -1,0 +1,18 @@
+@import "bootstrap/scss/bootstrap";
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    .skill-item {
+        margin: 2px 10px;
+
+        .text-dark {
+            font-weight: 100;
+        }
+        small {
+            margin-left: 5px;
+            color: $gray-600;
+            font-size: 12px;
+        }
+    }
+}
