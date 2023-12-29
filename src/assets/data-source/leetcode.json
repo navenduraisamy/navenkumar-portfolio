@@ -1,0 +1,25 @@
+{
+    "data": {
+        "leetcodeUser": {
+            "username": "navenduraisamy",
+            "profile": {
+                "realName": "Navenkumar D",
+                "userAvatar": "https://assets.leetcode.com/users/avatars/avatar_1703785352.png"
+            },
+            "badges": [
+                {
+                    "id": "2855930",
+                    "displayName": "50 Days Badge 2023",
+                    "icon": "https://assets.leetcode.com/static_assets/marketing/lg50.png",
+                    "category": "COMPETITION"
+                },
+                {
+                    "id": "2855929",
+                    "displayName": "100 Days Badge 2023",
+                    "icon": "https://assets.leetcode.com/static_assets/marketing/lg100.png",
+                    "category": "COMPETITION"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,173 @@
+{
+    "tagProblemCounts": {
+        "advanced": [
+            {
+                "tagName": "Data Stream",
+                "tagSlug": "data-stream",
+                "problemsSolved": 2
+            },
+            {
+                "tagName": "Game Theory",
+                "tagSlug": "game-theory",
+                "problemsSolved": 2
+            },
+            {
+                "tagName": "Rolling Hash",
+                "tagSlug": "rolling-hash",
+                "problemsSolved": 3
+            },
+            {
+                "tagName": "Backtracking",
+                "tagSlug": "backtracking",
+                "problemsSolved": 25
+            },
+            {
+                "tagName": "Bitmask",
+                "tagSlug": "bitmask",
+                "problemsSolved": 2
+            },
+            {
+                "tagName": "Quickselect",
+                "tagSlug": "quickselect",
+                "problemsSolved": 3
+            },
+            {
+                "tagName": "Dynamic Programming",
+                "tagSlug": "dynamic-programming",
+                "problemsSolved": 75
+            },
+            {
+                "tagName": "Divide and Conquer",
+                "tagSlug": "divide-and-conquer",
+                "problemsSolved": 13
+            },
+            {
+                "tagName": "Trie",
+                "tagSlug": "trie",
+                "problemsSolved": 5
+            },
+            {
+                "tagName": "Union Find",
+                "tagSlug": "union-find",
+                "problemsSolved": 14
+            },
+            {
+                "tagName": "Binary Indexed Tree",
+                "tagSlug": "binary-indexed-tree",
+                "problemsSolved": 1
+            },
+            {
+                "tagName": "Segment Tree",
+                "tagSlug": "segment-tree",
+                "problemsSolved": 1
+            },
+            {
+                "tagName": "Monotonic Stack",
+                "tagSlug": "monotonic-stack",
+                "problemsSolved": 5
+            },
+            {
+                "tagName": "Monotonic Queue",
+                "tagSlug": "monotonic-queue",
+                "problemsSolved": 3
+            },
+            {
+                "tagName": "Topological Sort",
+                "tagSlug": "topological-sort",
+                "problemsSolved": 4
+            },
+            {
+                "tagName": "Shortest Path",
+                "tagSlug": "shortest-path",
+                "problemsSolved": 3
+            }
+        ],
+        "intermediate": [
+            {
+                "tagName": "Tree",
+                "tagSlug": "tree",
+                "problemsSolved": 52
+            },
+            {
+                "tagName": "Binary Tree",
+                "tagSlug": "binary-tree",
+                "problemsSolved": 45
+            },
+            {
+                "tagName": "Hash Table",
+                "tagSlug": "hash-table",
+                "problemsSolved": 77
+            },
+            {
+                "tagName": "Ordered Set",
+                "tagSlug": "ordered-set",
+                "problemsSolved": 1
+            },
+            {
+                "tagName": "Graph",
+                "tagSlug": "graph",
+                "problemsSolved": 20
+            },
+            {
+                "tagName": "Greedy",
+                "tagSlug": "greedy",
+                "problemsSolved": 31
+            },
+            {
+                "tagName": "Binary Search",
+                "tagSlug": "binary-search",
+                "problemsSolved": 34
+            },
+            {
+                "tagName": "Depth-First Search",
+                "tagSlug": "depth-first-search",
+                "problemsSolved": 63
+            },
+            {
+                "tagName": "Breadth-First Search",
+                "tagSlug": "breadth-first-search",
+                "problemsSolved": 57
+            },
+            {
+                "tagName": "Recursion",
+                "tagSlug": "recursion",
+                "problemsSolved": 14
+            },
+            {
+                "tagName": "Sliding Window",
+                "tagSlug": "sliding-window",
+                "problemsSolved": 15
+            },
+            {
+                "tagName": "Bit Manipulation",
+                "tagSlug": "bit-manipulation",
+                "problemsSolved": 20
+            },
+            {
+                "tagName": "Math",
+                "tagSlug": "math",
+                "problemsSolved": 50
+            },
+            {
+                "tagName": "Randomized",
+                "tagSlug": "randomized",
+                "problemsSolved": 2
+            },
+            {
+                "tagName": "Design",
+                "tagSlug": "design",
+                "problemsSolved": 11
+            },
+            {
+                "tagName": "Brainteaser",
+                "tagSlug": "brainteaser",
+                "problemsSolved": 1
+            },
+            {
+                "tagName": "Database",
+                "tagSlug": "database",
+                "problemsSolved": 12
+            }
+        ]
+    }
+}

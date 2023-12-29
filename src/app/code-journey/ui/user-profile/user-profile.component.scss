@@ -1,0 +1,14 @@
+@import "src/bs-variables.scss";
+
+.profile-pic {
+    width: 75px;
+    border-radius: 50%;
+    border: 1px solid $gray-200;
+}
+
+.text-container {
+    margin-left: 16px;
+    h5{
+        margin-bottom: 0;
+    }
+}

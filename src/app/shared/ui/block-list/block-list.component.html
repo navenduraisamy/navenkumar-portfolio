@@ -1,1 +1,6 @@
-<p>block-list works!</p>
+<div class="grid-container">
+  <ng-container *ngFor="let item of list">
+    <ng-container *ngTemplateOutlet="blockListItemTemplate; context: { 'item': item }">
+    </ng-container>
+  </ng-container>
+</div>

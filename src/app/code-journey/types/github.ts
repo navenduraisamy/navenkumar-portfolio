@@ -7,3 +7,10 @@ export interface Repository {
     language: string;
     homepage: string;
 }
+
+export interface GithubUser {
+    login: string;
+    name: string;
+    avatar_url: string;
+    html_url: string;
+}

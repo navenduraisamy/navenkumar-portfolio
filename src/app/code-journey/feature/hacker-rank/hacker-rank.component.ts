@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { HackerRankService } from '../../data-access/services/hacker-rank.service';
 import { Observable } from 'rxjs';
-import { HackerRankCertificate } from '../../types/hacker-rank';
+import { HackerRankCertificate, HackerRankUser } from '../../types/hacker-rank';
+import { UserProfileComponent } from '../../ui/user-profile/user-profile.component';
+import { CertificateItemComponent } from '../../ui/certificate-item/certificate-item.component';
 
 @Component({
   selector: 'app-hacker-rank',
   standalone: true,
-  imports: [CommonModule, HttpClientModule],
+  imports: [CommonModule, HttpClientModule, UserProfileComponent, CertificateItemComponent],
   providers: [HackerRankService],
   templateUrl: './hacker-rank.component.html',
   styleUrls: ['./hacker-rank.component.scss']
@@ -16,6 +18,7 @@ import { HackerRankCertificate } from '../../types/hacker-rank';
 export class HackerRankComponent {
   readonly username = "navenkumar";
   certificates$: Observable<HackerRankCertificate[]> = this.hackerrankService.getUserCertificates(this.username);
+  hacker$: Observable<HackerRankUser> = this.hackerrankService.getUserData();
 
   constructor(private hackerrankService: HackerRankService) {
   }

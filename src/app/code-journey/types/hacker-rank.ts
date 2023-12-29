@@ -35,3 +35,10 @@ export interface Certificate {
   skill_unique_id: string;
   description: string;
 }
+
+export interface HackerRankUser {
+  id: number;
+  username: string;
+  name: string;
+  avatar: string;
+}

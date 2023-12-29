@@ -1,0 +1,136 @@
+{
+    "data": [
+        {
+            "id": "f95a96bd0489",
+            "type": "test_results",
+            "links": {
+                "self": "https://www.hackerrank.com/community/v1/test_results/f95a96bd0489"
+            },
+            "attributes": {
+                "status": "test_passed",
+                "username": "NAVENKUMAR",
+                "unlock_date": null,
+                "waived_off": false,
+                "certificate": {
+                    "track_slug": "problem_solving_basic",
+                    "label": "Problem Solving",
+                    "level": "Basic",
+                    "skill_unique_id": "bbcecf90d4cd",
+                    "description": "It covers basic topics of Data Structures (such as Arrays, Strings) and Algorithms (such as Sorting and Searching)."
+                },
+                "certificates": [
+                    "Problem Solving (Basic)"
+                ],
+                "certificate_image": "https://downloads.hackerrank.com/certificates/f95a96bd0489",
+                "hacker_name": "NAVENKUMAR D",
+                "test_unique_id": "33gp893pqhs",
+                "kind": "earned",
+                "hacker_name_updated_at": null,
+                "seen_by_user": null,
+                "completed_at": null,
+                "score": null,
+                "alloted_at": "2020-06-13T13:55:43.000Z",
+                "type": "skill"
+            }
+        },
+        {
+            "id": "57bf880ad2f2",
+            "type": "test_results",
+            "links": {
+                "self": "https://www.hackerrank.com/community/v1/test_results/57bf880ad2f2"
+            },
+            "attributes": {
+                "status": "test_passed",
+                "username": "NAVENKUMAR",
+                "unlock_date": "2023-12-03T06:32:03.000Z",
+                "waived_off": null,
+                "certificate": {
+                    "track_slug": "java_basic",
+                    "label": "Java",
+                    "level": "Basic",
+                    "skill_unique_id": "a3d33583e623",
+                    "description": "It will cover basic topics in Java language such as classes, data structures, inheritance, exception handling, etc. You are expected to be proficient in either Java 7 or Java 8."
+                },
+                "certificates": [
+                    "Java (Basic)"
+                ],
+                "certificate_image": "https://downloads.hackerrank.com/certificates/57bf880ad2f2",
+                "hacker_name": "Navenkumar D",
+                "test_unique_id": "82cj42i90lk",
+                "kind": "earned",
+                "hacker_name_updated_at": null,
+                "seen_by_user": null,
+                "completed_at": "2023-11-03T07:32:03.724Z",
+                "score": 115,
+                "alloted_at": "2023-11-03T06:51:34.000Z",
+                "type": "skill"
+            }
+        },
+        {
+            "id": "bbe1882b88ca",
+            "type": "test_results",
+            "links": {
+                "self": "https://www.hackerrank.com/community/v1/test_results/bbe1882b88ca"
+            },
+            "attributes": {
+                "status": "test_passed",
+                "username": "NAVENKUMAR",
+                "unlock_date": null,
+                "waived_off": false,
+                "certificate": {
+                    "track_slug": "python_basic",
+                    "label": "Python",
+                    "level": "Basic",
+                    "skill_unique_id": "ae7b45738f96",
+                    "description": "It covers topics like Scalar Types, Operators and Control Flow, Strings, Collections and Iteration, Modularity, Objects and Types and Classes"
+                },
+                "certificates": [
+                    "Python (Basic)"
+                ],
+                "certificate_image": "https://downloads.hackerrank.com/certificates/bbe1882b88ca",
+                "hacker_name": "NAVENKUMAR D",
+                "test_unique_id": "ch1k00qp1cn",
+                "kind": "earned",
+                "hacker_name_updated_at": null,
+                "seen_by_user": null,
+                "completed_at": null,
+                "score": null,
+                "alloted_at": "2020-06-13T07:33:19.000Z",
+                "type": "skill"
+            }
+        },
+        {
+            "id": "0112b1b8fb93",
+            "type": "test_results",
+            "links": {
+                "self": "https://www.hackerrank.com/community/v1/test_results/0112b1b8fb93"
+            },
+            "attributes": {
+                "status": "test_passed",
+                "username": "NAVENKUMAR",
+                "unlock_date": "2024-01-19T06:06:34.000Z",
+                "waived_off": null,
+                "certificate": {
+                    "track_slug": "javascript_basic",
+                    "label": "JavaScript",
+                    "level": "Basic",
+                    "skill_unique_id": "2b899851360d",
+                    "description": "It covers topics like, Functions, Currying, Hoisting, Scope, Inheritance, Events and Error Handling."
+                },
+                "certificates": [
+                    "JavaScript (Basic)"
+                ],
+                "certificate_image": "https://downloads.hackerrank.com/certificates/0112b1b8fb93",
+                "hacker_name": "Navenkumar D",
+                "test_unique_id": "dff5pp65l92",
+                "kind": "earned",
+                "hacker_name_updated_at": null,
+                "seen_by_user": null,
+                "completed_at": "2023-12-20T07:36:34.321Z",
+                "score": 100,
+                "alloted_at": "2023-12-20T06:31:32.000Z",
+                "type": "skill"
+            }
+        }
+    ]
+}
