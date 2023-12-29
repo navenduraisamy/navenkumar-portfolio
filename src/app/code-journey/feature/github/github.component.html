@@ -7,6 +7,7 @@
 </ng-container>
 
 <ng-container *ngIf="repositories$ | async as repositories">
+  <h5 class="border-bottom pb-1 mt-4 mb-3">Repositories</h5>
   <app-block-list [list]="repositories">
     <ng-template #blockListItemTemplate let-item="item">
       <div class="grid-item border d-flex flex-column">
