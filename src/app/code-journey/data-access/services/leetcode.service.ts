@@ -20,14 +20,14 @@ export class LeetcodeService {
   }
 
   getUserInfo(username: string): Observable<LeetcodeUser> {
-    return this.http.get<{data: { leetcodeUser: LeetcodeUser }}>("navenkumar-portfolio/assets/data-source/leetcode.json")
+    return this.http.get<{data: { leetcodeUser: LeetcodeUser }}>("assets/data-source/leetcode.json")
       .pipe(
         map((response) => response.data.leetcodeUser)
       )
   }
 
   getSkills(): Observable<TagProblemCounts> {
-    return this.http.get<{ tagProblemCounts: TagProblemCounts }>("navenkumar-portfolio/assets/data-source/leetcode-skill.json")
+    return this.http.get<{ tagProblemCounts: TagProblemCounts }>("assets/data-source/leetcode-skill.json")
       .pipe(
         map(response => response.tagProblemCounts),
         map(response => {
