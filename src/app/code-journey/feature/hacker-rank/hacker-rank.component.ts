@@ -5,11 +5,12 @@ import { HackerRankService } from '../../data-access/services/hacker-rank.servic
 import { Observable } from 'rxjs';
 import { HackerRankCertificate, HackerRankUser } from '../../types/hacker-rank';
 import { UserProfileComponent } from '../../ui/user-profile/user-profile.component';
+import { CertificateItemComponent } from '../../ui/certificate-item/certificate-item.component';
 
 @Component({
   selector: 'app-hacker-rank',
   standalone: true,
-  imports: [CommonModule, HttpClientModule, UserProfileComponent],
+  imports: [CommonModule, HttpClientModule, UserProfileComponent, CertificateItemComponent],
   providers: [HackerRankService],
   templateUrl: './hacker-rank.component.html',
   styleUrls: ['./hacker-rank.component.scss']

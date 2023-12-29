@@ -1,7 +1,17 @@
-<ng-container *ngIf="(hacker$ | async) as hacker">
-    <app-user-profile [displayName]="hacker.name" [avatarUrl]="hacker.avatar">
-        <a class="text-muted" href="http://hackerrank.com/{{hacker.username}}">{{hacker.username}}</a>
-    </app-user-profile>
+<ng-container *ngIf="hacker$ | async as hacker">
+  <app-user-profile [displayName]="hacker.name" [avatarUrl]="hacker.avatar">
+    <a class="text-muted" href="http://hackerrank.com/{{ hacker.username }}">
+      {{ hacker.username }}
+    </a>
+  </app-user-profile>
 </ng-container>
 
-{{ certificates$ | async | json }}
+<section class="mt-5">
+  <h5 class="border-bottom pb-1">HackerRank Certifications</h5>
+  <div *ngIf="certificates$ | async as certificates" class="d-flex flex-wrap">
+    <app-certificate-item
+      *ngFor="let cert of certificates"
+      [certificate]="cert"
+    ></app-certificate-item>
+  </div>
+</section>

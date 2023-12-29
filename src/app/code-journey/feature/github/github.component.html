@@ -1,22 +1,21 @@
 <ng-container *ngIf="githubUser$ | async as user">
   <app-user-profile [displayName]="user.name" [avatarUrl]="user.avatar_url">
-    <a href="{{ user.html_url }}" class="text-muted">{{ user.login }}</a>
+    <a href="{{ user.html_url }}" class="text-muted">
+      <i class="bi bi-github pr-2"></i> {{ user.login }}
+    </a>
   </app-user-profile>
 </ng-container>
-
-
 
 <ng-container *ngIf="repositories$ | async as repositories">
   <app-block-list [list]="repositories">
     <ng-template #blockListItemTemplate let-item="item">
       <div class="grid-item border d-flex flex-column">
-        <a href="{{ item.html_url }}" class="title text-primary">{{ item.name | titlecase }}</a>
+        <a href="{{ item.html_url }}" class="title text-primary">{{
+          item.name | titlecase
+        }}</a>
         <small>{{ item.description }}</small>
         <small class="text-muted mt-auto pt-3">{{ item.language }}</small>
       </div>
     </ng-template>
   </app-block-list>
-  
 </ng-container>
-
-
